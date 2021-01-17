@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <form method="post" novalidate>
+
+  <h3>Contact</h3>
+    If you have any question or digression, just call me or drop me a line. <br>
+    <br>
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-success">Send!</button>
+  </form>
+
+ <br>
+
+Ewa Dwornik<br>
+nofutureyoga@gmail.com<br>
++354 7837141<br>
+    <a href='https://www.facebook.com/nofutureyoga'>My Facebook</a></p>
+    <a href='https://www.instagram.com/nofuture.yoga/'>My Instagram</a></p><br>
+
+
+
+
+</ul>
+
+{% endblock %}

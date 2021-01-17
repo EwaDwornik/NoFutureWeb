@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+
+    <img style="width: 100%" src="../static/background.png"><br><br>
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../static/yoga-classes.jpg" style="height: 250px" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Yoga class</h5>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+
+
+<h5 style="text-align: center;">YOGA AND NO FUTURE</h5><br>
+
+    <a href="/yogaclass">
+        <img style="width: 300px; float: left;" src="../static/yoga-classes.jpg">
+    </a>
+    <a href="/products">
+        <img style="width: 300px; float: right;" src="../static/products.jpg">
+    </a>   
+
+    <br><br><br>
+    <table style="width:100%">
+      
+        <tr>
+            <td style="width: 50%"><img style="width: 300px;" src="../static/atyourplace.jpg"></td> 
+            <td style="width: 50%"><h5>Private yoga classes</h5><br>
+                <h7>
+                    Being in a yoga studio amongst others or listening a spiritual speech before a class is not the taste of everyone, I know it from experience, and private classes solve this issue.
+                <br>       
+                    I work pretty well with small groups and in one-to-one sessions. I prefer to have time and space to give adjustments when they are needed, and it is easier than with a big group of students.
+                <br>
+                    I can lead a class at your workplace, at your home or at mine. Wherever you feel comfortable. </h2>
+                </h7>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <table style="width:100%">
+      
+        <tr>
+            
+            <td style="width: 50%"><h5>I am a yoga teacher</h5><br>
+                <h7>
+                    This is one of the fruits of my first trip to India, to Rishikesh - the world capital of yoga. I've gotten way more than this document, but fortunately we, as humanity, haven't started giving diplomas for that ;)</h2>
+                </h7>
+            </td>
+            <td style="width: 50%"><img style="width: 300px;" src="../static/certificate.jpg"></td> 
+        </tr>
+    </table>
+
+<br>
+
+<img style="width: 100%" src="../static/background2.png"><br><br>
+<br>
+<h5 style="text-align: center;">KEEP YOUR BANDHAS STRONG, JEDIS</h5>
+<br>
+<object style="width: 100%"><param name="movie" value="https://www.youtube.com/watch?v=j5yuTpJCHCw&feature=emb_title"><param name="allowFullScreen" value="true"><param name="allowScriptAccess" value="always"><embed src="https://www.youtube.com/watch?v=j5yuTpJCHCw&feature=emb_title" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="100%" height="390"></object><br>
+
+{% endblock %}
