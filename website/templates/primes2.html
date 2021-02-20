@@ -1,25 +1,39 @@
 {% extends 'base.html' %}
 {% block content %}
 <ul style="text-align:center;">
-
     <form action="" method="POST">
         {% csrf_token %}
-    <h3>Show all prime numbers between number2 and number3:</h3><br>
-    <p>Number3 needs to be smaller than 10001.</p>
+        <h3>Show all prime numbers between 2 numbers:</h3><br>
+        <p>Number3 needs to be smaller than 10001.</p>
         <br><br>
-        {{ form3 }}
+        {{ form3.as_p }}
+        <button name="prime2" type="submit">Let's do that!</button>
 
-        <input type="submit" value="Let's do that!">
-        <h5>{{ lst }}</h5>
+        <p class="answer">{{ lst }}</p>
+    </form>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h3>Is it a prime number?</h3>
 
         <br><br>
-        <table style="width:100%">
-            <tr>
-                <td style="width: 50%"><a href="/calculators/primes"><img style="width: 250px;" src="/static/primes2.jpg"></a></td>
-                <td style="width: 50%"><a href="/calculators/divisors"><img style="width: 250px;" src="/static/divisors.jpg"></a></td>
-            </tr>
-        </table>
+        {{ form2.as_p}}
+
+        <button type="submit" name="prime">Is it a prime?"</button>
+        <h5>{{ number }}</h5>
 
     </form>
-{% endblock %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h1>Show all prime numbers between 2 numbers:</h1><br>
+        <p>Number3 needs to be smaller than 10001.</p>
+        <br><br>
+        {{ form3.as_p }}
+
+        <button type="submit" name="prime2">Let's do that!"</button>
+        <p class="answer">{{ lst }}</p>
+
+
+    </form>
+</ul>
+    {% endblock %}
 

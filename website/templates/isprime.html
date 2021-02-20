@@ -1,36 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
 <ul style="text-align:center;">
-
     <form action="" method="POST">
         {% csrf_token %}
 
-            <h3>Is it a prime number?</h3>
+        <h3>Is it a prime number?</h3>
 
         <br><br>
-            {{ form2 }}
+        {{ form2.as_p }}
 
-        <input type="submit" value="Is it a prime?">
-             </br>
-        <h5>It is a prime number</h5>
+        <button name="prime" type="submit">Is it a prime?</button>
+        </br>
+        <p class="answer">It is a prime number</p>
+
+    </form>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h3>Show all prime numbers between 2 numbers:</h3><br>
+        <p>Number3 needs to be smaller than 10001.</p>
+        <br><br>
+        {{ form3.as_p }}
+
+        <button type="submit" name="prime2">Let's do that!"</button>
+        <p class="answer">{{ lst }}</p>
 
 
     </form>
 
 
-         <br><br><br>
-    <table style="width:100%">
-            <tr>
-                <td style="width: 50%"><a href="/calculators/divisors"><img style="width: 200px;" src="/static/divisors.jpg"></a></td>
-                <td style="width: 50%"><a href="/calculators/primes2"><img style="width: 200px;" src="/static/primes2.jpg"></a></td>
-            </tr>
-        </table>
-
-
-
-
-    </form>
-
-    </form>
 </ul>
 {% endblock %}

@@ -4,23 +4,25 @@
 
     <form action="" method="POST">
         {% csrf_token %}
-            <h3>Prime numbers are the best.</h3></br>
-            <h5>And because of that reason, I made 3, very useful calculators. Play with them, or not. How simple is that?</h5>
-        <br>
+        <p class="description">
+            <br><br>Prime numbers are the best. <br>
+            And because of that reason, I made 3, very useful calculators. Play with them, or not. How simple is
+            that?</h5>
+        </p>
+        <br><br>
+        <table style="width:100%">
 
-         <br><br>
-    <table style="width:100%">
-
-        <tr>
-            <td style="width: 30%"><a href="/calculators/divisors"><img style="width: 200px;" src="../static/divisors.jpg"></a></td>
-            <td style="width: 30%"><a href="/calculators/primes"><img style="width: 200px;" src="../static/primes2.jpg"></a></td>
-            <td style="width: 30%"><a href="/calculators/primes2"><img style="width: 200px;" src="../static/primes.jpg"></a></td>
-        </tr>
-    </table>
-
-
+            <tr>
+                <td style="width: 30%"><a href="/calculators/divisors"><img style="width: 200px;"
+                                                                            src="../static/divisors.jpg"></a></td>
+                <td style="width: 30%"><a href="/calculators/primes"><img style="width: 200px;"
+                                                                          src="../static/primes2.jpg"></a></td>
+                <td style="width: 30%"><a href="/calculators/primes2"><img style="width: 200px;"
+                                                                           src="../static/primes.jpg"></a></td>
+            </tr>
+        </table>
 
 
     </form>
 
-{% endblock %}
+    {% endblock %}
